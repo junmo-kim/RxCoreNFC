@@ -6,6 +6,7 @@
 //  Copyright (c) RxSwiftCommunity. All rights reserved.
 //
 
+#if canImport(CoreNFC)
 import CoreNFC
 #if !RX_NO_MODULE
     import RxSwift
@@ -76,4 +77,4 @@ extension Reactive where Base: NFCNDEFReaderSession {
     }
     
 }
-
+#endif
